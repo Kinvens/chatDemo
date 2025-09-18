@@ -1,0 +1,12 @@
+version: "1.0.0"
+services:
+  postgresql:
+    image: "postgres:latest"
+    container_name: "local-pg2"
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "ai_user"
+      POSTGRES_PASSWORD: "ai_password"
+      POSTGRES_DB: "ai-room"
