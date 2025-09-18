@@ -1,0 +1,26 @@
+### register
+POST http://localhost:3000/user/create
+Content-Type: application/json
+
+{
+  "account": "123",
+  "password": "678",
+  "confirmPassword": "678"
+}
+
+###
+
+### register
+GET http://localhost:3000/user/profile
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvdzY4NDB5ZTRtcGFwbzNxdHJham5jbDMiLCJ1c2VybmFtZSI6IjEyMyIsImlhdCI6MTc1ODAzNTY4MiwiZXhwIjoxNzU4MTIyMDgyfQ.tS56fe7zhx4HRw41a7N8wEt5HUrywQTd9MWQTRBgUiU
+
+###
+
+POST http://localhost:3000/user/send
+Content-Type: application/json
+
+{
+  "text": "你好，请问你能做什么"
+}
+
+###
